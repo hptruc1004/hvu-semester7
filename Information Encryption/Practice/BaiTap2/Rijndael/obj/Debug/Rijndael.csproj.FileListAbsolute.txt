@@ -1,0 +1,10 @@
+F:\Academic\Semester 7\Information Encryption\Practice\BaiTap2\BaiTap2\Rijndael\bin\Debug\Rijndael.exe
+F:\Academic\Semester 7\Information Encryption\Practice\BaiTap2\BaiTap2\Rijndael\bin\Debug\Rijndael.pdb
+F:\Academic\Semester 7\Information Encryption\Practice\BaiTap2\BaiTap2\Rijndael\obj\Debug\ResolveAssemblyReference.cache
+F:\Academic\Semester 7\Information Encryption\Practice\BaiTap2\BaiTap2\Rijndael\obj\Debug\RijndaelCrypto.MainForm.resources
+F:\Academic\Semester 7\Information Encryption\Practice\BaiTap2\BaiTap2\Rijndael\obj\Debug\RijndaelCrypto.Properties.Resources.resources
+F:\Academic\Semester 7\Information Encryption\Practice\BaiTap2\BaiTap2\Rijndael\obj\Debug\Rijndael.csproj.GenerateResource.Cache
+F:\Academic\Semester 7\Information Encryption\Practice\BaiTap2\BaiTap2\Rijndael\obj\Debug\Rijndael.exe
+F:\Academic\Semester 7\Information Encryption\Practice\BaiTap2\BaiTap2\Rijndael\obj\Debug\Rijndael.pdb
+F:\Academic\Semester 7\Information Encryption\Practice\BaiTap2\Rijndael\obj\Debug\Rijndael.exe
+F:\Academic\Semester 7\Information Encryption\Practice\BaiTap2\Rijndael\obj\Debug\Rijndael.pdb
