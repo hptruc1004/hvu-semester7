@@ -1,0 +1,6 @@
+Dependencies for Project 'Blinky', Target 'LPC2378 Flash': (DO NOT MODIFY !)
+F (.\LPC2300.s)(0x47FB06D4)(--device DARMP -g --apcs=interwork --pd "__MICROLIB SETA 1" -I "C:\Keil\ARM\INC\Philips" --list ".\Flash\LPC2300.lst" --xref -o ".\Flash\LPC2300.o")
+F (.\Blinky.c)(0x4B0E373C)(-c --device DARMP -D__MICROLIB -g -O0 --apcs=interwork -I "C:\Keil\ARM\INC\Philips" -o ".\Flash\blinky.o" --depend ".\Flash\blinky.d")
+I (C:\Keil\ARM\RV31\INC\stdio.h)(0x48744774)
+I (C:\Keil\ARM\INC\Philips\LPC23xx.H)(0x4817CE1E)
+I (LCD.h)(0x47F4527A)

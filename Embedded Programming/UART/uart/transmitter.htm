@@ -1,0 +1,681 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html dir="ltr" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en"><head>
+
+
+<title>Universal asynchronous receiver/transmitter - Wikipedia, the free encyclopedia</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<meta name="generator" content="MediaWiki 1.16alpha-wmf">
+<link rel="alternate" type="application/x-wiki" title="Edit this page" href="http://en.wikipedia.org/w/index.php?title=Universal_asynchronous_receiver/transmitter&amp;action=edit">
+<link rel="edit" title="Edit this page" href="http://en.wikipedia.org/w/index.php?title=Universal_asynchronous_receiver/transmitter&amp;action=edit">
+<link rel="apple-touch-icon" href="http://en.wikipedia.org/apple-touch-icon.png">
+<link rel="shortcut icon" href="http://en.wikipedia.org/favicon.ico">
+<link rel="search" type="application/opensearchdescription+xml" href="http://en.wikipedia.org/w/opensearch_desc.php" title="Wikipedia (en)">
+<link rel="copyright" href="http://creativecommons.org/licenses/by-sa/3.0/">
+<link rel="alternate" type="application/rss+xml" title="Wikipedia RSS Feed" href="http://en.wikipedia.org/w/index.php?title=Special:RecentChanges&amp;feed=rss">
+<link rel="alternate" type="application/atom+xml" title="Wikipedia Atom Feed" href="http://en.wikipedia.org/w/index.php?title=Special:RecentChanges&amp;feed=atom">
+<link rel="stylesheet" href="transmitter_files/shared.css" type="text/css" media="screen">
+<link rel="stylesheet" href="transmitter_files/commonPrint.css" type="text/css" media="print">
+<link rel="stylesheet" href="transmitter_files/main.css" type="text/css" media="screen">
+<link rel="stylesheet" href="transmitter_files/main_002.css" type="text/css" media="handheld">
+<!--[if lt IE 5.5000]><link rel="stylesheet" href="/skins-1.5/monobook/IE50Fixes.css?243z2" type="text/css" media="screen" /><![endif]-->
+<!--[if IE 5.5000]><link rel="stylesheet" href="/skins-1.5/monobook/IE55Fixes.css?243z2" type="text/css" media="screen" /><![endif]-->
+<!--[if IE 6]><link rel="stylesheet" href="/skins-1.5/monobook/IE60Fixes.css?243z2" type="text/css" media="screen" /><![endif]-->
+<!--[if IE 7]><link rel="stylesheet" href="/skins-1.5/monobook/IE70Fixes.css?243z2" type="text/css" media="screen" /><![endif]-->
+<link rel="stylesheet" href="transmitter_files/index_003.css" type="text/css" media="all">
+<link rel="stylesheet" href="transmitter_files/index_005.css" type="text/css" media="print">
+<link rel="stylesheet" href="transmitter_files/index_002.css" type="text/css" media="handheld">
+<link rel="stylesheet" href="transmitter_files/index_004.css" type="text/css" media="all">
+<link rel="stylesheet" href="transmitter_files/index.css" type="text/css" media="all">
+<script type="text/javascript">
+var skin="monobook",
+stylepath="/skins-1.5",
+wgArticlePath="/wiki/$1",
+wgScriptPath="/w",
+wgScriptExtension=".php",
+wgScript="/w/index.php",
+wgVariantArticlePath=false,
+wgActionPaths={},
+wgServer="http://en.wikipedia.org",
+wgCanonicalNamespace="",
+wgCanonicalSpecialPageName=false,
+wgNamespaceNumber=0,
+wgPageName="Universal_asynchronous_receiver/transmitter",
+wgTitle="Universal asynchronous receiver/transmitter",
+wgAction="view",
+wgArticleId=75008,
+wgIsArticle=true,
+wgUserName=null,
+wgUserGroups=null,
+wgUserLanguage="en",
+wgContentLanguage="en",
+wgBreakFrames=false,
+wgCurRevisionId=317035394,
+wgVersion="1.16alpha-wmf",
+wgEnableAPI=true,
+wgEnableWriteAPI=true,
+wgSeparatorTransformTable=["", ""],
+wgDigitTransformTable=["", ""],
+wgMainPageTitle="Main Page",
+wgFormattedNamespaces={"-2": "Media", "-1": "Special", "0": "", "1": "Talk", "2": "User", "3": "User talk", "4": "Wikipedia", "5": "Wikipedia talk", "6": "File", "7": "File talk", "8": "MediaWiki", "9": "MediaWiki talk", "10": "Template", "11": "Template talk", "12": "Help", "13": "Help talk", "14": "Category", "15": "Category talk", "100": "Portal", "101": "Portal talk"},
+wgNamespaceIds={"media": -2, "special": -1, "": 0, "talk": 1, "user": 2, "user_talk": 3, "wikipedia": 4, "wikipedia_talk": 5, "file": 6, "file_talk": 7, "mediawiki": 8, "mediawiki_talk": 9, "template": 10, "template_talk": 11, "help": 12, "help_talk": 13, "category": 14, "category_talk": 15, "portal": 100, "portal_talk": 101, "wp": 4, "wt": 5, "image": 6, "image_talk": 7},
+wgMWSuggestTemplate="http://en.wikipedia.org/w/api.php?action=opensearch\x26search={searchTerms}\x26namespace={namespaces}\x26suggest",
+wgDBname="enwiki",
+wgSearchNamespaces=[0],
+wgMWSuggestMessages=["with suggestions", "no suggestions"],
+wgRestrictionEdit=[],
+wgRestrictionMove=[],
+wgNotice="",
+wgNoticeLocal="";
+</script>
+<script src="transmitter_files/wikibits.js" type="text/javascript"></script>
+<script src="transmitter_files/ajax.js" type="text/javascript"></script>
+<script src="transmitter_files/mwsuggest.js" type="text/javascript"></script>
+<script type="text/javascript" src="transmitter_files/centralnotice.js"></script><style type="text/css">
+#centralNotice .siteNoticeSmall{display:none;}
+#centralNotice .siteNoticeSmallAnon{display:none;}
+#centralNotice .siteNoticeSmallUser{display:none;}
+#centralNotice.collapsed .siteNoticeBig{display:none;}
+#centralNotice.collapsed .siteNoticeSmall{display:block;}
+#centralNotice.collapsed .siteNoticeSmallUser{display:block;}
+#centralNotice.collapsed .siteNoticeSmallAnon{display:block;}
+#centralNotice.anonnotice .siteNoticeSmallUser{display:none !important;}
+#centralNotice.usernotice .siteNoticeSmallAnon{display:none !important;}
+</style>
+
+
+<!--[if lt IE 7]><script type="text/javascript" src="/skins-1.5/common/IEFixes.js?243z2"></script>
+	<meta http-equiv="imagetoolbar" content="no" /><![endif]-->
+<script src="transmitter_files/index.php" type="text/javascript"></script><script type="text/javascript" src="transmitter_files/index_002.php"></script>
+
+</head><body class="mediawiki ltr ns-0 ns-subject page-Universal_asynchronous_receiver_transmitter skin-monobook">
+	<div id="globalWrapper"><div style="position: absolute; z-index: 40; left: 155px; top: 1px; clear: both; float: left; font-size: 90%; font-style: italic; white-space: nowrap;" class="noprint" id="anon-banner">Your <a href="http://wikimediafoundation.org/wiki/Donate/Now/en?utm_source=enwiki_00&amp;utm_medium=anon_donation_banner&amp;utm_campaign=spontaneous_donation" class="extiw" title="wikimedia:Fundraising"><b>continued donations</b></a> keep Wikipedia running!</div>
+		<div id="column-content">
+	<div id="content">
+		<a id="top"></a>
+		<div id="siteNotice"><script type="text/javascript">if (wgNotice != '') document.writeln(wgNotice);</script></div>		<h1 id="firstHeading" class="firstHeading">Universal asynchronous receiver/transmitter</h1>
+		<div id="bodyContent">
+			<h3 id="siteSub">From Wikipedia, the free encyclopedia</h3>
+			<div id="contentSub"></div>
+									<div id="jump-to-nav">Jump to: <a href="#column-one">navigation</a>, <a href="#searchInput">search</a></div>			<!-- start content -->
+			<div class="dablink">"DUART" redirects here. For the castle on the Island of Mull, see <a href="http://en.wikipedia.org/wiki/Duart_Castle" title="Duart Castle">Duart Castle</a>.</div>
+<p>A <b>universal asynchronous receiver/transmitter</b> (usually abbreviated <b>UART</b> and pronounced <span title="Pronunciation in the International Phonetic Alphabet (IPA)" class="IPA"><a href="http://en.wikipedia.org/wiki/Wikipedia:IPA_for_English" title="Wikipedia:IPA for English">/ˈjuːɑrt/</a></span>) is a type of "asynchronous receiver/transmitter", a piece of <a href="http://en.wikipedia.org/wiki/Computer" title="Computer">computer</a> <a href="http://en.wikipedia.org/wiki/Hardware" title="Hardware">hardware</a> that translates data between <a href="http://en.wikipedia.org/wiki/Parallel_communication" title="Parallel communication">parallel</a> and <a href="http://en.wikipedia.org/wiki/Serial_communication" title="Serial communication">serial</a> forms. UARTs are commonly used in conjunction with other communication standards such as <a href="http://en.wikipedia.org/wiki/Electronic_Industries_Alliance" title="Electronic Industries Alliance">EIA</a> <a href="http://en.wikipedia.org/wiki/RS-232" title="RS-232">RS-232</a>.</p>
+<p>A UART is usually an individual (or part of an) <a href="http://en.wikipedia.org/wiki/Integrated_circuit" title="Integrated circuit">integrated circuit</a> used for <a href="http://en.wikipedia.org/wiki/Serial_communications" title="Serial communications" class="mw-redirect">serial communications</a> over a computer or peripheral device <a href="http://en.wikipedia.org/wiki/Serial_port" title="Serial port">serial port</a>. UARTs are now commonly included in microcontrollers. A dual UART or <b>DUART</b>
+combines two UARTs into a single chip. Many modern ICs now come with a
+UART that can also communicate synchronously; these devices are called <b>USARTs</b>.</p>
+<table id="toc" class="toc">
+<tbody><tr>
+<td>
+<div id="toctitle">
+<h2>Contents</h2>
+ <span class="toctoggle">[<a href="javascript:toggleToc()" class="internal" id="togglelink">hide</a>]</span></div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#Definition"><span class="tocnumber">1</span> <span class="toctext">Definition</span></a>
+<ul>
+<li class="toclevel-2 tocsection-2"><a href="#Transmitting_and_receiving_serial_data"><span class="tocnumber">1.1</span> <span class="toctext">Transmitting and receiving serial data</span></a></li>
+<li class="toclevel-2 tocsection-3"><a href="#Asynchronous_receiving_and_transmitting"><span class="tocnumber">1.2</span> <span class="toctext">Asynchronous receiving and transmitting</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-4"><a href="#History"><span class="tocnumber">2</span> <span class="toctext">History</span></a>
+<ul>
+<li class="toclevel-2 tocsection-5"><a href="#UART_models"><span class="tocnumber">2.1</span> <span class="toctext">UART models</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-6"><a href="#Structure"><span class="tocnumber">3</span> <span class="toctext">Structure</span></a></li>
+<li class="toclevel-1 tocsection-7"><a href="#Special_Receiver_Conditions"><span class="tocnumber">4</span> <span class="toctext">Special Receiver Conditions</span></a>
+<ul>
+<li class="toclevel-2 tocsection-8"><a href="#Overrun_Error"><span class="tocnumber">4.1</span> <span class="toctext">Overrun Error</span></a></li>
+<li class="toclevel-2 tocsection-9"><a href="#Underrun_Error"><span class="tocnumber">4.2</span> <span class="toctext">Underrun Error</span></a></li>
+<li class="toclevel-2 tocsection-10"><a href="#Framing_Error"><span class="tocnumber">4.3</span> <span class="toctext">Framing Error</span></a></li>
+<li class="toclevel-2 tocsection-11"><a href="#Parity_Error"><span class="tocnumber">4.4</span> <span class="toctext">Parity Error</span></a></li>
+<li class="toclevel-2 tocsection-12"><a href="#Break_Condition"><span class="tocnumber">4.5</span> <span class="toctext">Break Condition</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-13"><a href="#Baudrate"><span class="tocnumber">5</span> <span class="toctext">Baudrate</span></a></li>
+<li class="toclevel-1 tocsection-14"><a href="#See_also"><span class="tocnumber">6</span> <span class="toctext">See also</span></a></li>
+<li class="toclevel-1 tocsection-15"><a href="#References"><span class="tocnumber">7</span> <span class="toctext">References</span></a></li>
+<li class="toclevel-1 tocsection-16"><a href="#External_links"><span class="tocnumber">8</span> <span class="toctext">External links</span></a></li>
+</ul>
+</td>
+</tr>
+</tbody></table>
+<script type="text/javascript">
+//<![CDATA[
+if (window.showTocToggle) { var tocShowText = "show"; var tocHideText = "hide"; showTocToggle(); } 
+//]]>
+</script>
+<h2><span class="editsection">[<a href="http://en.wikipedia.org/w/index.php?title=Universal_asynchronous_receiver/transmitter&amp;action=edit&amp;section=1" title="Edit section: Definition">edit</a>]</span> <span class="mw-headline" id="Definition">Definition</span></h2>
+<h3><span class="editsection">[<a href="http://en.wikipedia.org/w/index.php?title=Universal_asynchronous_receiver/transmitter&amp;action=edit&amp;section=2" title="Edit section: Transmitting and receiving serial data">edit</a>]</span> <span class="mw-headline" id="Transmitting_and_receiving_serial_data">Transmitting and receiving serial data</span></h3>
+<p>The Universal Asynchronous Receiver/Transmitter (UART) controller is
+the key component of the serial communications subsystem of a computer.
+The UART takes bytes of data and transmits the individual bits in a
+sequential fashion. At the destination, a second UART re-assembles the
+bits into complete bytes. Serial transmission of digital information
+(bits) through a single wire or other medium is much more cost
+effective than parallel transmission through multiple wires. A UART is
+used to convert the transmitted information between its sequential and
+parallel form at each end of the link. Each UART contains a <a href="http://en.wikipedia.org/wiki/Shift_register" title="Shift register">shift register</a> which is the fundamental method of conversion between serial and parallel forms.</p>
+<p>The UART usually does not directly generate or receive the external
+signals used between different items of equipment. Typically, separate
+interface devices are used to convert the logic level signals of the
+UART to and from the external signaling levels.</p>
+<p>External signals may be of many different forms. Examples of standards for voltage signaling are <a href="http://en.wikipedia.org/wiki/RS-232" title="RS-232">RS-232</a>, <a href="http://en.wikipedia.org/wiki/RS-422" title="RS-422" class="mw-redirect">RS-422</a> and <a href="http://en.wikipedia.org/wiki/RS-485" title="RS-485" class="mw-redirect">RS-485</a> from the <a href="http://en.wikipedia.org/wiki/Electronic_Industries_Alliance" title="Electronic Industries Alliance">EIA</a>. Historically, the presence or absence of current (in <a href="http://en.wikipedia.org/wiki/Current_loop" title="Current loop">current loops</a>) was used in telegraph circuits. Some signaling schemes do not use electrical wires. Examples of such are <a href="http://en.wikipedia.org/wiki/Fiber_optics" title="Fiber optics" class="mw-redirect">optical fiber</a>, IrDA (<a href="http://en.wikipedia.org/wiki/Infrared" title="Infrared">infrared</a>), and (wireless) <a href="http://en.wikipedia.org/wiki/Bluetooth" title="Bluetooth">Bluetooth</a>
+in its Serial Port Profile (SPP). Some signaling schemes use modulation
+of a carrier signal (with or without wires). Examples are modulation of
+audio signals with phone line <a href="http://en.wikipedia.org/wiki/Modem" title="Modem">modems</a>, RF modulation with data radios, and the <a href="http://www.yamar.com/DC-LIN.html" class="external text" rel="nofollow">DC-LIN</a> for <a href="http://en.wikipedia.org/wiki/Power_line_communication" title="Power line communication">power line communication</a>.</p>
+<p>Communication may be "full duplex" (both send and receive at the
+same time) or "half duplex" (devices take turns transmitting and
+receiving).</p>
+<p>As of 2008, UARTs are commonly used with <a href="http://en.wikipedia.org/wiki/RS-232" title="RS-232">RS-232</a>
+for embedded systems communications. It is useful to communicate
+between microcontrollers and also with PCs. Many chips provide UART
+functionality in silicon, and low-cost chips exist to convert logic
+level signals (such as <a href="http://en.wikipedia.org/wiki/Transistor-transistor_logic" title="Transistor-transistor logic" class="mw-redirect">TTL</a> voltages) to RS-232 level signals (for example, <a href="http://en.wikipedia.org/wiki/Maxim_Integrated_Products" title="Maxim Integrated Products">Maxim's</a> <a href="http://en.wikipedia.org/wiki/MAX232" title="MAX232">MAX232</a>).</p>
+<h3><span class="editsection">[<a href="http://en.wikipedia.org/w/index.php?title=Universal_asynchronous_receiver/transmitter&amp;action=edit&amp;section=3" title="Edit section: Asynchronous receiving and transmitting">edit</a>]</span> <span class="mw-headline" id="Asynchronous_receiving_and_transmitting">Asynchronous receiving and transmitting</span></h3>
+<p>In asynchronous transmitting, <a href="http://en.wikipedia.org/wiki/Teletype" title="Teletype" class="mw-redirect">teletype</a>-style
+UARTs send a "start" bit, five to eight data bits,
+least-significant-bit first, an optional "parity" bit, and then one,
+one and a half, or two "stop" bits. The start bit is the opposite
+polarity of the data-line's idle state. The stop bit is the data-line's
+idle state, and provides a delay before the next character can start.
+(This is called <a href="http://en.wikipedia.org/wiki/Asynchronous_start-stop" title="Asynchronous start-stop" class="mw-redirect">asynchronous start-stop</a>
+transmission). In mechanical teletypes, the "stop" bit was often
+stretched to two bit times to give the mechanism more time to finish
+printing a character. A stretched "stop" bit also helps
+resynchronization.</p>
+<p>The parity bit can either make the number of "one" bits between any
+start/stop pair odd, or even, or it can be omitted. Odd parity is more
+reliable because it assures that there will always be at least one data
+transition, and this permits many UARTs to resynchronize.</p>
+<p>In <i>synchronous</i> transmission, the clock data is recovered
+separately from the data stream and no start/stop bits are used. This
+improves the efficiency of transmission on suitable channels since more
+of the bits sent are usable data and not character framing. An
+asynchronous transmission sends no characters over the interconnection
+when the transmitting device has nothing to send—only idle stop bits;
+but a synchronous interface must send "pad" characters to maintain
+synchronism between the receiver and transmitter. The usual filler is
+the <a href="http://en.wikipedia.org/wiki/ASCII" title="ASCII">ASCII</a> "SYN" character. This may be done automatically by the transmitting device.</p>
+<p>USART chips have both synchronous and asynchronous modes.</p>
+<p>Asynchronous transmission allows data to be transmitted without the
+sender having to send a clock signal to the receiver. Instead, the
+sender and receiver must agree on timing parameters in advance and
+special bits are added to each word which are used to synchronize the
+sending and receiving units.</p>
+<p>When a word is given to the UART for Asynchronous transmissions, a
+bit called the "Start Bit" is added to the beginning of each word that
+is to be transmitted. The Start Bit is used to alert the receiver that
+a word of data is about to be sent, and to force the clock in the
+receiver into synchronization with the clock in the transmitter. These
+two clocks must be accurate enough to not have the frequency drift by
+more than 10% during the transmission of the remaining bits in the
+word. (This requirement was set in the days of mechanical teleprinters
+and is easily met by modern electronic equipment.)</p>
+<p>After the Start Bit, the individual bits of the word of data are
+sent, with the Least Significant Bit (LSB) being sent first. Each bit
+in the transmission is transmitted for exactly the same amount of time
+as all of the other bits, and the receiver “looks” at the wire at
+approximately halfway through the period assigned to each bit to
+determine if the bit is a 1 or a 0. For example, if it takes two
+seconds to send each bit, the receiver will examine the signal to
+determine if it is a 1 or a 0 after one second has passed, then it will
+wait two seconds and then examine the value of the next bit, and so on.</p>
+<p>The sender does not know when the receiver has “looked” at the value
+of the bit. The sender only knows when the clock says to begin
+transmitting the next bit of the word.</p>
+<p>When the entire data word has been sent, the transmitter may add a
+Parity Bit that the transmitter generates. The Parity Bit may be used
+by the receiver to perform simple error checking. Then at least one
+Stop Bit is sent by the transmitter.</p>
+<p>When the receiver has received all of the bits in the data word, it
+may check for the Parity Bits (both sender and receiver must agree on
+whether a Parity Bit is to be used), and then the receiver looks for a
+Stop Bit. If the Stop Bit does not appear when it is supposed to, the
+UART considers the entire word to be garbled and will report a Framing
+Error to the host processor when the data word is read. The usual cause
+of a Framing Error is that the sender and receiver clocks were not
+running at the same speed, or that the signal was interrupted.</p>
+<p>Regardless of whether the data was received correctly or not, the
+UART automatically discards the Start, Parity and Stop bits. If the
+sender and receiver are configured identically, these bits are not
+passed to the host. If another word is ready for transmission, the
+Start Bit for the new word can be sent as soon as the Stop Bit for the
+previous word has been sent. Because asynchronous data is “self
+synchronizing”, if there is no data to transmit, the transmission line
+can be idle. A <a href="http://en.wikipedia.org/wiki/Data_communication" title="Data communication" class="mw-redirect">data communication</a> <a href="http://en.wikipedia.org/wiki/Pulse_%28signal_processing%29" title="Pulse (signal processing)">pulse</a>
+can only be in one of two states but there are many names for the two
+states. When on, circuit closed, low voltage, current flowing, or a
+logical zero, the pulse is said to be in the "space" condition. When
+off, circuit open, high voltage, current stopped, or a logical one, the
+pulse is said to be in the "mark" condition. A <a href="http://en.wikipedia.org/wiki/Character_code" title="Character code" class="mw-redirect">character code</a> begins with the <a href="http://en.wikipedia.org/wiki/Data_communication" title="Data communication" class="mw-redirect">data communication</a> circuit in the space condition. If the mark condition appears, a logical one is recorded otherwise a logical zero.</p>
+<p>Figure 1 shows this format.</p>
+<p><a href="http://en.wikipedia.org/wiki/File:Charactercode.png" class="image"><img alt="Charactercode.png" src="transmitter_files/Charactercode.png" width="343" height="56"></a></p>
+<p>The start bit is always a <b>0</b> (logic low), which is also called a <b>space</b>. The start bit signals the receiving <a href="http://en.wikipedia.org/wiki/Data_terminal_equipment" title="Data terminal equipment">DTE</a>
+that a character code is coming. The next five to eight bits, depending
+on the code set employed, represent the character. In the ASCII code
+set the eighth data bit may be a parity bit. The next one or two bits
+are always in the <b>mark</b> (logic high, i.e., '1') condition and called the stop bit(s). They provide a "rest" interval for the receiving <a href="http://en.wikipedia.org/wiki/Data_terminal_equipment" title="Data terminal equipment">DTE</a> so that it may prepare for the next character which may be after the stop bit(s). The rest interval was required by mechanical <a href="http://en.wikipedia.org/wiki/Teletype" title="Teletype" class="mw-redirect">Teletypes</a>
+which used a motor driven camshaft to decode each character. At the end
+of each character the motor needed time to strike the character bail
+(print the character) and reset the camshaft.</p>
+<p>All operations of the UART hardware are controlled by a clock signal
+which runs at a multiple (say, 16) of the data rate - each data bit is
+as long as 16 clock pulses. The receiver tests the state of the
+incoming signal on each clock pulse, looking for the beginning of the
+start bit. If the apparent start bit lasts at least one-half of the bit
+time, it is valid and signals the start of a new character. If not, the
+spurious pulse is ignored. After waiting a further bit time, the state
+of the line is again sampled and the resulting level clocked into a
+shift register. After the required number of bit periods for the
+character length (5 to 8 bits, typically) have elapsed, the contents of
+the shift register is made available (in parallel fashion) to the
+receiving system. The UART will set a flag indicating new data is
+available, and may also generate a processor <a href="http://en.wikipedia.org/wiki/Interrupt" title="Interrupt">interrupt</a>
+to request that the host processor transfers the received data. In some
+common types of UART, a small first-in, first-out (FIFO) buffer memory
+is inserted between the receiver shift register and the host system
+interface. This allows the host processor more time to handle an
+interrupt from the UART and prevents loss of received data at high
+rates.</p>
+<p>Transmission operation is simpler since it is under the control of
+the transmitting system. As soon as data is deposited in the shift
+register, the UART hardware generates a start bit, shifts the required
+number of data bits out to the line,generates and appends the parity
+bit (if used), and appends the stop bits. Since transmission of a
+single character may take a long time relative to CPU speeds, the UART
+will maintain a flag showing busy status so that the host system does
+not deposit a new character for transmission until the previous one has
+been completed; this may also be done with an interrupt. Since
+full-duplex operation requires characters to be sent and received at
+the same time, practical UARTs use two different shift registers for
+transmitted characters and received characters.</p>
+<p>Transmitting and receiving UARTs must be set for the same bit speed,
+character length, parity, and stop bits for proper operation. The
+receiving UART may detect some mismatched settings and set a "framing
+error" flag bit for the host system; in exceptional cases the receiving
+UART will produce an erratic stream of mutilated characters and
+transfer them to the host system.</p>
+<p>Typical serial ports used with personal computers connected to
+modems use eight data bits, no parity, and one stop bit; for this
+configuration the number of ASCII character per seconds equals the bit
+rate divided by 10.</p>
+<h2><span class="editsection">[<a href="http://en.wikipedia.org/w/index.php?title=Universal_asynchronous_receiver/transmitter&amp;action=edit&amp;section=4" title="Edit section: History">edit</a>]</span> <span class="mw-headline" id="History">History</span></h2>
+<p>Some early <a href="http://en.wikipedia.org/wiki/Electric_telegraph" title="Electric telegraph" class="mw-redirect">telegraph</a> schemes used variable-length pulses (as in <a href="http://en.wikipedia.org/wiki/Morse_code" title="Morse code">Morse code</a>) and <a href="http://www.railroad-signaling.com/tty/m19/M19_8w.jpg" class="external text" rel="nofollow">rotating clockwork mechanisms</a> to transmit alphabetic characters. The first UART-like devices (with fixed-length pulses) were rotating mechanical switches (<i>commutators</i>). These sent 5-bit <a href="http://en.wikipedia.org/wiki/Baudot_code" title="Baudot code">Baudot codes</a> for mechanical teletypewriters, and replaced <a href="http://en.wikipedia.org/wiki/Morse_code" title="Morse code">morse code</a>. Later, <a href="http://en.wikipedia.org/wiki/ASCII" title="ASCII">ASCII</a> required a seven bit code. When <a href="http://en.wikipedia.org/wiki/International_Business_Machines" title="International Business Machines" class="mw-redirect">IBM</a> built computers in the early 1960s with 8-bit characters, it became customary to store the ASCII code in 8 bits.</p>
+<p><a href="http://en.wikipedia.org/wiki/Gordon_Bell" title="Gordon Bell">Gordon Bell</a> designed the UART for the <a href="http://en.wikipedia.org/wiki/Programmed_Data_Processor" title="Programmed Data Processor">PDP</a> series of computers. <a href="http://en.wikipedia.org/wiki/Western_Digital" title="Western Digital">Western Digital</a> made the first single-chip UART WD1402A around 1971; this was an early example of a <a href="http://en.wikipedia.org/wiki/Integrated_circuit" title="Integrated circuit">medium scale integrated circuit</a>.</p>
+<p>An example of an early 1980s UART was the <a href="http://en.wikipedia.org/wiki/National_Semiconductor" title="National Semiconductor">National Semiconductor</a> <a href="http://en.wikipedia.org/wiki/8250_UART" title="8250 UART">8250</a>.
+In the 1990s, newer UARTs were developed with on-chip buffers. This
+allowed higher transmission speed without data loss and without
+requiring such frequent attention from the computer. For example, the
+popular National Semiconductor <a href="http://en.wikipedia.org/wiki/16550_UART" title="16550 UART">16550</a> has a 16 byte <a href="http://en.wikipedia.org/wiki/FIFO" title="FIFO" class="mw-redirect">FIFO</a>, and spawned many variants, including the <i>16C550, 16C650, 16C750, and 16C850</i>.</p>
+<p>Depending on the manufacturer, different terms are used to identify devices that perform the UART functions. <a href="http://en.wikipedia.org/wiki/Intel" title="Intel" class="mw-redirect">Intel</a> called their 8251 device a "Programmable Communication Interface". <a href="http://en.wikipedia.org/wiki/MOS_Technology" title="MOS Technology">MOS Technology</a> <a href="http://en.wikipedia.org/wiki/MOS_Technology_6551" title="MOS Technology 6551">6551</a>
+was known under the name "Asynchronous Communications Interface
+Adapter" (ACIA). The term "Serial Communications Interface" (SCI) was
+first used at <a href="http://en.wikipedia.org/wiki/Motorola" title="Motorola">Motorola</a> around 1975 to refer to their start-stop asynchronous serial interface device, which others were calling a UART.</p>
+<p><br>
+Some very low-cost <a href="http://en.wikipedia.org/wiki/Home_computers" title="Home computers" class="mw-redirect">home computers</a> or <a href="http://en.wikipedia.org/wiki/Embedded_systems" title="Embedded systems" class="mw-redirect">embedded systems</a> dispensed with a UART and used the <a href="http://en.wikipedia.org/wiki/Central_processing_unit" title="Central processing unit">CPU</a>
+to sample the state of an input port or directly manipulate an output
+port for data transmission. While very CPU-intensive, since the CPU
+timing was critical, these schemes avoided the purchase of a costly
+UART chip. The technique was known as a <a href="http://en.wikipedia.org/wiki/Bit-banging" title="Bit-banging">bit-banging</a> serial port.</p>
+<h3><span class="editsection">[<a href="http://en.wikipedia.org/w/index.php?title=Universal_asynchronous_receiver/transmitter&amp;action=edit&amp;section=5" title="Edit section: UART models">edit</a>]</span> <span class="mw-headline" id="UART_models">UART models</span></h3>
+<table class="wikitable">
+<tbody><tr>
+<th>Model</th>
+<th>Description</th>
+</tr>
+<tr>
+<td>Intersil 6402</td>
+</tr>
+<tr>
+<td>Z8440</td>
+<td>2000 kbps. Async, <a href="http://en.wikipedia.org/wiki/Binary_Synchronous_Communications" title="Binary Synchronous Communications">Bisync</a>, <a href="http://en.wikipedia.org/wiki/Synchronous_Data_Link_Control" title="Synchronous Data Link Control">SDLC</a>, <a href="http://en.wikipedia.org/wiki/High-Level_Data_Link_Control" title="High-Level Data Link Control">HDLC</a>, <a href="http://en.wikipedia.org/wiki/X.25" title="X.25">X.25</a>. <a href="http://en.wikipedia.org/wiki/Cyclic_redundancy_check" title="Cyclic redundancy check">CRC</a>. 4-byte RX buffer. 2-byte TX buffer. <a href="http://en.wikipedia.org/wiki/Direct_memory_access" title="Direct memory access">DMA</a>.<sup id="cite_ref-zilog_com-ps0183_0-0" class="reference"><a href="#cite_note-zilog_com-ps0183-0"><span>[</span>1<span>]</span></a></sup></td>
+</tr>
+<tr>
+<td><a href="http://en.wikipedia.org/wiki/8250_UART" title="8250 UART">8250</a></td>
+<td rowspan="5">Obsolete with 1-byte buffers</td>
+</tr>
+<tr>
+<td>Motorola 6850</td>
+</tr>
+<tr>
+<td><a href="http://en.wikipedia.org/wiki/MOS_Technology_6522" title="MOS Technology 6522">6522</a></td>
+</tr>
+<tr>
+<td><a href="http://en.wikipedia.org/wiki/MOS_Technology_6551" title="MOS Technology 6551">6551</a></td>
+</tr>
+<tr>
+<td>Rockwell 65C52</td>
+</tr>
+<tr>
+<td>16450</td>
+</tr>
+<tr>
+<td><a href="http://en.wikipedia.org/wiki/16550_UART" title="16550 UART">16550</a></td>
+</tr>
+<tr>
+<td><a href="http://en.wikipedia.org/wiki/16550_UART" title="16550 UART">16550A</a></td>
+<td rowspan="2">16-byte buffers, TL=1,4,8,14; 115.2 kbps standard, many support 230.4 or 460.8 kbps. DMA-mode.<sup id="cite_ref-cs_utk_edu-mswin_serial_faq_1-0" class="reference"><a href="#cite_note-cs_utk_edu-mswin_serial_faq-1"><span>[</span>2<span>]</span></a></sup></td>
+</tr>
+<tr>
+<td>16C552</td>
+</tr>
+<tr>
+<td>16650</td>
+<td>32-byte buffers. 460.8 kbps</td>
+</tr>
+<tr>
+<td>16750</td>
+<td>64-byte buffer for send, 56-byte for receive. 921.6 kbps</td>
+</tr>
+<tr>
+<td>16850</td>
+<td rowspan="2">128-byte buffers. 460.8 kbps or 1500 kbps</td>
+</tr>
+<tr>
+<td>16C850</td>
+</tr>
+<tr>
+<td>16950</td>
+</tr>
+<tr>
+<td><span style="white-space: nowrap;">Hayes ESP</span></td>
+<td>1 kByte buffers</td>
+</tr>
+</tbody></table>
+<h2><span class="editsection">[<a href="http://en.wikipedia.org/w/index.php?title=Universal_asynchronous_receiver/transmitter&amp;action=edit&amp;section=6" title="Edit section: Structure">edit</a>]</span> <span class="mw-headline" id="Structure">Structure</span></h2>
+<p>A UART usually contains the following components:</p>
+<ul>
+<li>a clock generator, usually a multiple of the bit rate to allow sampling in the middle of a bit period.</li>
+<li>input and output shift registers</li>
+<li>transmit/receive control</li>
+<li>read/write control logic</li>
+<li>transmit/receive buffers (optional)</li>
+<li>parallel data bus buffer (optional)</li>
+<li>First-in, first-out (<a href="http://en.wikipedia.org/wiki/FIFO" title="FIFO" class="mw-redirect">FIFO</a>) buffer memory (optional)</li>
+</ul>
+<h2><span class="editsection">[<a href="http://en.wikipedia.org/w/index.php?title=Universal_asynchronous_receiver/transmitter&amp;action=edit&amp;section=7" title="Edit section: Special Receiver Conditions">edit</a>]</span> <span class="mw-headline" id="Special_Receiver_Conditions">Special Receiver Conditions</span></h2>
+<h3><span class="editsection">[<a href="http://en.wikipedia.org/w/index.php?title=Universal_asynchronous_receiver/transmitter&amp;action=edit&amp;section=8" title="Edit section: Overrun Error">edit</a>]</span> <span class="mw-headline" id="Overrun_Error">Overrun Error</span></h3>
+<p>An "overrun error" occurs when the UART receiver cannot process the
+character that just came in before the next one arrives. Various UART
+devices have differing amounts of buffer space to hold received
+characters. The CPU must service the UART in order to remove characters
+from the input buffer. If the CPU does not service the UART quickly
+enough and the buffer becomes full, an Overrun Error will occur.</p>
+<h3><span class="editsection">[<a href="http://en.wikipedia.org/w/index.php?title=Universal_asynchronous_receiver/transmitter&amp;action=edit&amp;section=9" title="Edit section: Underrun Error">edit</a>]</span> <span class="mw-headline" id="Underrun_Error">Underrun Error</span></h3>
+<p>An "underrun error" occurs when the UART transmitter has completed
+sending a character and the transmit buffer is empty. In asynchronous
+modes this is treated as an indication that no data remains to be
+transmitted, rather than an error, since additional stop bits can be
+appended. This error indication is commonly found in USARTs, since an
+underrun is more serious in synchronous systems.</p>
+<h3><span class="editsection">[<a href="http://en.wikipedia.org/w/index.php?title=Universal_asynchronous_receiver/transmitter&amp;action=edit&amp;section=10" title="Edit section: Framing Error">edit</a>]</span> <span class="mw-headline" id="Framing_Error">Framing Error</span></h3>
+<p>A "framing error" occurs when the designated "start" and "stop" bits
+are not valid. As the "start" bit is used to identify the beginning of
+an incoming character, it acts as a reference for the remaining bits.
+If the data line is not in the expected idle state when the "stop" bit
+is expected, a <i>Framing Error</i> will occur.</p>
+<h3><span class="editsection">[<a href="http://en.wikipedia.org/w/index.php?title=Universal_asynchronous_receiver/transmitter&amp;action=edit&amp;section=11" title="Edit section: Parity Error">edit</a>]</span> <span class="mw-headline" id="Parity_Error">Parity Error</span></h3>
+<p>A "parity error" occurs when the number of "active" bits does not
+agree with the specified parity configuration of the UART, producing a <i><a href="http://en.wikipedia.org/wiki/Parity_bit" title="Parity bit">Parity</a> Error</i>.
+Because the "parity" bit is optional, this error will not occur if
+parity has been disabled. Parity error is set when the parity of an
+incoming data character does not match the expected value.</p>
+<h3><span class="editsection">[<a href="http://en.wikipedia.org/w/index.php?title=Universal_asynchronous_receiver/transmitter&amp;action=edit&amp;section=12" title="Edit section: Break Condition">edit</a>]</span> <span class="mw-headline" id="Break_Condition">Break Condition</span></h3>
+<p>A "break condition" occurs when the receiver input is at the "space"
+level for longer than some duration of time, typically, for more than a
+character time. This is not necessarily an error, but appears to the
+receiver as a character of all zero bits with a framing error.</p>
+<p>Some equipment will deliberately transmit the "break" level for
+longer than a character as an out-of-band signal. When signaling rates
+are mismatched, no meaningful characters can be sent, but a long
+"break" signal can be a useful way to get the attention of a mismatched
+receiver to do something (such as resetting itself). <a href="http://en.wikipedia.org/wiki/Unix-like" title="Unix-like">Unix-like</a>
+systems can use the long "break" level as a request to change the
+signaling rate, to support dial-in access at multiple signaling rates.</p>
+<h2><span class="editsection">[<a href="http://en.wikipedia.org/w/index.php?title=Universal_asynchronous_receiver/transmitter&amp;action=edit&amp;section=13" title="Edit section: Baudrate">edit</a>]</span> <span class="mw-headline" id="Baudrate">Baudrate</span></h2>
+<p>In embedded designs, it is necessary to choose a proper oscillator
+to get the correct baud rate with little or no error. Some examples of
+common crystal frequencies and baud rates with no errors are:</p>
+<ul>
+<li>18.432 MHz: 300, 600, 1200, 2400, 4800, 9600, 19200 <a href="http://en.wikipedia.org/wiki/Baud" title="Baud">Bd</a></li>
+<li>22.118400 MHz: 300, 600, 1200, 1800, 2400, 4800, 7200, 9600, 14400, 19200, 38400, 57600, 115200 Bd</li>
+<li>16 MHz: 125000, 500000 Bd</li>
+</ul>
+<h2><span class="editsection">[<a href="http://en.wikipedia.org/w/index.php?title=Universal_asynchronous_receiver/transmitter&amp;action=edit&amp;section=14" title="Edit section: See also">edit</a>]</span> <span class="mw-headline" id="See_also">See also</span></h2>
+<ul>
+<li><a href="http://en.wikipedia.org/wiki/Asynchronous_serial_communication" title="Asynchronous serial communication">Asynchronous serial communication</a></li>
+<li><a href="http://en.wikipedia.org/wiki/Baud" title="Baud">Baud</a></li>
+<li><a href="http://en.wikipedia.org/wiki/Bit_rate" title="Bit rate">bit rate</a></li>
+<li><a href="http://en.wikipedia.org/wiki/Modem" title="Modem">Modem</a></li>
+<li><a href="http://en.wikipedia.org/wiki/Morse_code" title="Morse code">Morse code</a></li>
+<li><a href="http://en.wikipedia.org/wiki/Serial_communication" title="Serial communication">Serial communication</a></li>
+<li><a href="http://en.wikipedia.org/wiki/Serial_port" title="Serial port">Serial port</a></li>
+<li><a href="http://en.wikipedia.org/wiki/USB" title="USB" class="mw-redirect">USB</a></li>
+<li><a href="http://en.wikipedia.org/wiki/16550_UART" title="16550 UART">16550 UART</a></li>
+<li><a href="http://en.wikipedia.org/wiki/8250_UART" title="8250 UART">8250 UART</a></li>
+</ul>
+<h2><span class="editsection">[<a href="http://en.wikipedia.org/w/index.php?title=Universal_asynchronous_receiver/transmitter&amp;action=edit&amp;section=15" title="Edit section: References">edit</a>]</span> <span class="mw-headline" id="References">References</span></h2>
+<div class="references-small">
+<ol class="references">
+<li id="cite_note-zilog_com-ps0183-0"><b><a href="#cite_ref-zilog_com-ps0183_0-0">^</a></b> <span class="citation web">"<a href="http://www.zilog.com/docs/z80/ps0183.pdf" class="external text" rel="nofollow">Zilog Product specification Z8440/1/2/4, Z84C40/1/2/3/4. Serial input/output controller</a>"<span class="printonly">. <a href="http://www.zilog.com/docs/z80/ps0183.pdf" class="external free" rel="nofollow">http://www.zilog.com/docs/z80/ps0183.pdf</a></span>.</span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=bookitem&amp;rft.btitle=Zilog+Product+specification+Z8440%2F1%2F2%2F4%2C+Z84C40%2F1%2F2%2F3%2F4.+Serial+input%2Foutput+controller&amp;rft.atitle=&amp;rft_id=http%3A%2F%2Fwww.zilog.com%2Fdocs%2Fz80%2Fps0183.pdf&amp;rfr_id=info:sid/en.wikipedia.org:Universal_asynchronous_receiver/transmitter"><span style="display: none;">&nbsp;</span></span> 090529 zilog.com</li>
+<li id="cite_note-cs_utk_edu-mswin_serial_faq-1"><b><a href="#cite_ref-cs_utk_edu-mswin_serial_faq_1-0">^</a></b> <span class="citation web">"<a href="http://www.cs.utk.edu/%7Eshuford/terminal/mswin_serial_faq.txt" class="external text" rel="nofollow">FAQ: The 16550A UART &amp; TurboCom drivers 1994</a>"<span class="printonly">. <a href="http://www.cs.utk.edu/%7Eshuford/terminal/mswin_serial_faq.txt" class="external free" rel="nofollow">http://www.cs.utk.edu/~shuford/terminal/mswin_serial_faq.txt</a></span>.</span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=bookitem&amp;rft.btitle=FAQ%3A+The+16550A+UART+%26+TurboCom+drivers+1994&amp;rft.atitle=&amp;rft_id=http%3A%2F%2Fwww.cs.utk.edu%2F%7Eshuford%2Fterminal%2Fmswin_serial_faq.txt&amp;rfr_id=info:sid/en.wikipedia.org:Universal_asynchronous_receiver/transmitter"><span style="display: none;">&nbsp;</span></span> 090529 cs.utk.edu</li>
+</ol>
+</div>
+<h2><span class="editsection">[<a href="http://en.wikipedia.org/w/index.php?title=Universal_asynchronous_receiver/transmitter&amp;action=edit&amp;section=16" title="Edit section: External links">edit</a>]</span> <span class="mw-headline" id="External_links">External links</span></h2>
+<ul>
+<li><a href="http://www.camiresearch.com/Data_Com_Basics/RS232_standard.html#anchor1155404" class="external text" rel="nofollow">A
+tutorial on the RS-232 standard, describing the definition of mark,
+space and their relationship with negative and positive voltages</a></li>
+<li><a href="http://www.freebsd.org/doc/en_US.ISO8859-1/articles/serial-uart/" class="external text" rel="nofollow">Freebsd Tutorials</a> (includes standard signal definitions, history of UART ICs, and pinout for commonly used DB25 connector)</li>
+<li><a href="http://www.societyofrobots.com/microcontroller_uart.shtml" class="external text" rel="nofollow">UART Tutorial for Robotics</a> (contains many practical examples)</li>
+</ul>
+<table class="navbox" style="" cellspacing="0">
+<tbody><tr>
+<td style="padding: 2px;">
+<table id="collapsibleTable0" class="nowraplinks collapsible autocollapse" style="background: transparent none repeat scroll 0% 0%; width: 100%; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial; color: inherit;" cellspacing="0">
+<tbody><tr>
+<th style="" colspan="2" class="navbox-title"><span class="collapseButton">[<a href="javascript:collapseTable(0);" id="collapseButton0">hide</a>]</span>
+<div style="float: left; width: 6em; text-align: left;">
+<div class="noprint plainlinks navbar" style="border: medium none ; padding: 0pt; background: transparent none repeat scroll 0% 0%; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial; font-weight: normal; font-size: xx-small;"><a href="http://en.wikipedia.org/wiki/Template:Computer_bus" title="Template:Computer bus"><span title="View this template" style="border: medium none ;">v</span></a>&nbsp;<span style="font-size: 80%;">•</span>&nbsp;<a href="http://en.wikipedia.org/wiki/Template_talk:Computer_bus" title="Template talk:Computer bus"><span title="Discuss this template" style="border: medium none ;">d</span></a>&nbsp;<span style="font-size: 80%;">•</span>&nbsp;<a href="http://en.wikipedia.org/w/index.php?title=Template:Computer_bus&amp;action=edit" class="external text" rel="nofollow"><span title="Edit this template" style="border: medium none ;">e</span></a></div>
+</div>
+<span class="" style="font-size: 110%;"><a href="http://en.wikipedia.org/wiki/Bus_%28computer%29" title="Bus (computer)" class="mw-redirect">Computer bus</a> &amp; <a href="http://en.wikipedia.org/wiki/Interconnection" title="Interconnection">interconnection</a> <a href="http://en.wikipedia.org/wiki/Standards" title="Standards" class="mw-redirect">standards</a> (<a href="http://en.wikipedia.org/wiki/Wired_communication" title="Wired communication">wired</a>)</span></th>
+</tr>
+<tr style="height: 2px;">
+<td></td>
+</tr>
+<tr>
+<td class="navbox-group" style="">Main articles</td>
+<td style="padding: 0px; text-align: left; border-left-width: 2px; border-left-style: solid; width: 100%;" class="navbox-list navbox-odd">
+<div style="padding: 0em 0.25em;"><a href="http://en.wikipedia.org/wiki/Front-side_bus" title="Front-side bus">Front-side bus</a><span style="font-weight: bold;">&nbsp;·</span> <a href="http://en.wikipedia.org/wiki/Back-side_bus" title="Back-side bus">Back-side bus</a><span style="font-weight: bold;">&nbsp;·</span> <a href="http://en.wikipedia.org/wiki/Multidrop_bus" title="Multidrop bus">Multidrop bus</a><span style="font-weight: bold;">&nbsp;·</span> <a href="http://en.wikipedia.org/wiki/Daisy_chain_%28electrical_engineering%29" title="Daisy chain (electrical engineering)">Daisy chain</a><span style="font-weight: bold;">&nbsp;·</span> <a href="http://en.wikipedia.org/wiki/Control_bus" title="Control bus">Control bus</a><span style="font-weight: bold;">&nbsp;·</span> <a href="http://en.wikipedia.org/wiki/Address_bus" title="Address bus">Address bus</a><span style="font-weight: bold;">&nbsp;·</span> <a href="http://en.wikipedia.org/wiki/Bus_contention" title="Bus contention">Bus contention</a><span style="font-weight: bold;">&nbsp;·</span> <a href="http://en.wikipedia.org/wiki/Electrical_bus" title="Electrical bus">Electrical bus</a><br>
+<a href="http://en.wikipedia.org/wiki/List_of_device_bandwidths#Computer_buses" title="List of device bandwidths">List of bus bandwidths</a></div>
+</td>
+</tr>
+<tr style="height: 2px;">
+<td></td>
+</tr>
+<tr>
+<td class="navbox-group" style="">Computer bus standards (desktop)</td>
+<td style="padding: 0px; text-align: left; border-left-width: 2px; border-left-style: solid; width: 100%;" class="navbox-list navbox-even">
+<div style="padding: 0em 0.25em;"><a href="http://en.wikipedia.org/wiki/S-100_bus" title="S-100 bus">S-100 bus</a><span style="font-weight: bold;">&nbsp;·</span> <a href="http://en.wikipedia.org/wiki/MBus_%28SPARC%29" title="MBus (SPARC)">MBus</a><span style="font-weight: bold;">&nbsp;·</span> <a href="http://en.wikipedia.org/wiki/System_Management_Bus" title="System Management Bus">SMBus</a><span style="font-weight: bold;">&nbsp;·</span> <a href="http://en.wikipedia.org/wiki/Q-Bus" title="Q-Bus">Q-Bus</a><span style="font-weight: bold;">&nbsp;·</span> <a href="http://en.wikipedia.org/wiki/Industry_Standard_Architecture" title="Industry Standard Architecture">ISA</a><span style="font-weight: bold;">&nbsp;·</span> <a href="http://en.wikipedia.org/wiki/Amiga_Zorro_II" title="Amiga Zorro II">Zorro II</a><span style="font-weight: bold;">&nbsp;·</span> <a href="http://en.wikipedia.org/wiki/Amiga_Zorro_III" title="Amiga Zorro III">Zorro III</a><span style="font-weight: bold;">&nbsp;·</span> <a href="http://en.wikipedia.org/wiki/Computer_Automated_Measurement_and_Control" title="Computer Automated Measurement and Control">CAMAC</a><span style="font-weight: bold;">&nbsp;·</span> <a href="http://en.wikipedia.org/wiki/FASTBUS" title="FASTBUS">FASTBUS</a><span style="font-weight: bold;">&nbsp;·</span> <a href="http://en.wikipedia.org/wiki/Low_Pin_Count" title="Low Pin Count">LPC</a><span style="font-weight: bold;">&nbsp;·</span> HP Precision Bus<span style="font-weight: bold;">&nbsp;·</span> <a href="http://en.wikipedia.org/wiki/Extended_Industry_Standard_Architecture" title="Extended Industry Standard Architecture">EISA</a><span style="font-weight: bold;">&nbsp;·</span> <a href="http://en.wikipedia.org/wiki/VMEbus" title="VMEbus">VME</a><span style="font-weight: bold;">&nbsp;·</span> <a href="http://en.wikipedia.org/wiki/VME_eXtensions_for_Instrumentation" title="VME eXtensions for Instrumentation">VXI</a><span style="font-weight: bold;">&nbsp;·</span> <a href="http://en.wikipedia.org/wiki/NuBus" title="NuBus">NuBus</a><span style="font-weight: bold;">&nbsp;·</span> <a href="http://en.wikipedia.org/wiki/TURBOchannel" title="TURBOchannel">TURBOchannel</a><span style="font-weight: bold;">&nbsp;·</span> <a href="http://en.wikipedia.org/wiki/Micro_Channel_architecture" title="Micro Channel architecture">MCA</a><span style="font-weight: bold;">&nbsp;·</span> <a href="http://en.wikipedia.org/wiki/SBus" title="SBus">SBus</a><span style="font-weight: bold;">&nbsp;·</span> <a href="http://en.wikipedia.org/wiki/VESA_Local_Bus" title="VESA Local Bus">VLB</a><span style="font-weight: bold;">&nbsp;·</span> <a href="http://en.wikipedia.org/wiki/Conventional_PCI" title="Conventional PCI">PCI</a><span style="font-weight: bold;">&nbsp;·</span> <a href="http://en.wikipedia.org/wiki/PCI_eXtensions_for_Instrumentation" title="PCI eXtensions for Instrumentation">PXI</a><span style="font-weight: bold;">&nbsp;·</span> <a href="http://en.wikipedia.org/wiki/GSC_bus" title="GSC bus">HP GSC bus</a><span style="font-weight: bold;">&nbsp;·</span> <a href="http://en.wikipedia.org/wiki/CoreConnect" title="CoreConnect">CoreConnect</a><span style="font-weight: bold;">&nbsp;·</span> <a href="http://en.wikipedia.org/wiki/InfiniBand" title="InfiniBand">InfiniBand</a><span style="font-weight: bold;">&nbsp;·</span> <a href="http://en.wikipedia.org/wiki/Ultra_Port_Architecture" title="Ultra Port Architecture">UPA</a><span style="font-weight: bold;">&nbsp;·</span> <a href="http://en.wikipedia.org/wiki/PCI-X" title="PCI-X">PCI-X</a><span style="font-weight: bold;">&nbsp;·</span> <a href="http://en.wikipedia.org/wiki/Accelerated_Graphics_Port" title="Accelerated Graphics Port">AGP</a><span style="font-weight: bold;">&nbsp;·</span> <a href="http://en.wikipedia.org/wiki/PCI_Express" title="PCI Express">PCI Express</a><span style="font-weight: bold;">&nbsp;·</span> <a href="http://en.wikipedia.org/wiki/Intel_QuickPath_Interconnect" title="Intel QuickPath Interconnect">Intel QuickPath Interconnect</a><span style="font-weight: bold;">&nbsp;·</span> <a href="http://en.wikipedia.org/wiki/HyperTransport" title="HyperTransport">HyperTransport</a><span style="font-weight: bold;">&nbsp;·</span> <a href="http://en.wikipedia.org/wiki/Category:Computer_buses" title="Category:Computer buses">more...</a></div>
+</td>
+</tr>
+<tr style="height: 2px;">
+<td></td>
+</tr>
+<tr>
+<td class="navbox-group" style="">Computer bus standards (portable)</td>
+<td style="padding: 0px; text-align: left; border-left-width: 2px; border-left-style: solid; width: 100%;" class="navbox-list navbox-odd">
+<div style="padding: 0em 0.25em;"><a href="http://en.wikipedia.org/wiki/PC_Card" title="PC Card">PC Card</a><span style="font-weight: bold;">&nbsp;·</span> <a href="http://en.wikipedia.org/wiki/ExpressCard" title="ExpressCard">ExpressCard</a></div>
+</td>
+</tr>
+<tr style="height: 2px;">
+<td></td>
+</tr>
+<tr>
+<td class="navbox-group" style="">Storage bus standards</td>
+<td style="padding: 0px; text-align: left; border-left-width: 2px; border-left-style: solid; width: 100%;" class="navbox-list navbox-even">
+<div style="padding: 0em 0.25em;"><a href="http://en.wikipedia.org/wiki/ST-506" title="ST-506">ST-506</a><span style="font-weight: bold;">&nbsp;·</span> <a href="http://en.wikipedia.org/wiki/Enhanced_Small_Disk_Interface" title="Enhanced Small Disk Interface">ESDI</a><span style="font-weight: bold;">&nbsp;·</span> <a href="http://en.wikipedia.org/wiki/Storage_Module_Device" title="Storage Module Device">SMD</a><span style="font-weight: bold;">&nbsp;·</span> <a href="http://en.wikipedia.org/wiki/Parallel_ATA" title="Parallel ATA">Parallel ATA</a><span style="font-weight: bold;">&nbsp;·</span> <a href="http://en.wikipedia.org/wiki/Direct_memory_access" title="Direct memory access">DMA</a><span style="font-weight: bold;">&nbsp;·</span> <a href="http://en.wikipedia.org/wiki/Serial_Storage_Architecture" title="Serial Storage Architecture">SSA</a><span style="font-weight: bold;">&nbsp;·</span> <a href="http://en.wikipedia.org/wiki/HIPPI" title="HIPPI">HIPPI</a><span style="font-weight: bold;">&nbsp;·</span> <a href="http://en.wikipedia.org/wiki/USB_mass_storage_device_class" title="USB mass storage device class" class="mw-redirect">USB MSC</a><span style="font-weight: bold;">&nbsp;·</span> <a href="http://en.wikipedia.org/wiki/IEEE_1394_interface" title="IEEE 1394 interface">FireWire (1394)</a><span style="font-weight: bold;">&nbsp;·</span> <a href="http://en.wikipedia.org/wiki/Serial_ATA" title="Serial ATA">Serial ATA</a><span style="font-weight: bold;">&nbsp;·</span> <a href="http://en.wikipedia.org/wiki/ESATA" title="ESATA" class="mw-redirect">eSATA</a><span style="font-weight: bold;">&nbsp;·</span> <a href="http://en.wikipedia.org/wiki/SCSI" title="SCSI">SCSI</a><span style="font-weight: bold;">&nbsp;·</span> <a href="http://en.wikipedia.org/wiki/Parallel_SCSI" title="Parallel SCSI">Parallel SCSI</a><span style="font-weight: bold;">&nbsp;·</span> <a href="http://en.wikipedia.org/wiki/Serial_Attached_SCSI" title="Serial Attached SCSI" class="mw-redirect">Serial Attached SCSI</a><span style="font-weight: bold;">&nbsp;·</span> <a href="http://en.wikipedia.org/wiki/Fibre_Channel" title="Fibre Channel">Fibre Channel</a><span style="font-weight: bold;">&nbsp;·</span> <a href="http://en.wikipedia.org/wiki/ISCSI" title="ISCSI">iSCSI</a></div>
+</td>
+</tr>
+<tr style="height: 2px;">
+<td></td>
+</tr>
+<tr>
+<td class="navbox-group" style="">Peripheral bus standards</td>
+<td style="padding: 0px; text-align: left; border-left-width: 2px; border-left-style: solid; width: 100%;" class="navbox-list navbox-odd">
+<div style="padding: 0em 0.25em;"><a href="http://en.wikipedia.org/wiki/Apple_Desktop_Bus" title="Apple Desktop Bus">Apple Desktop Bus</a><span style="font-weight: bold;">&nbsp;·</span> <a href="http://en.wikipedia.org/wiki/HIL_bus" title="HIL bus">HIL</a><span style="font-weight: bold;">&nbsp;·</span> <a href="http://en.wikipedia.org/wiki/MIDI" title="MIDI" class="mw-redirect">MIDI</a><span style="font-weight: bold;">&nbsp;·</span> <a href="http://en.wikipedia.org/wiki/Multibus" title="Multibus">Multibus</a><span style="font-weight: bold;">&nbsp;·</span> <a href="http://en.wikipedia.org/wiki/RS-232" title="RS-232">RS-232 (serial port)</a><span style="font-weight: bold;">&nbsp;·</span> <a href="http://en.wikipedia.org/wiki/DMX512-A" title="DMX512-A">DMX512-A</a><span style="font-weight: bold;">&nbsp;·</span> <a href="http://en.wikipedia.org/wiki/EIA-422" title="EIA-422">EIA/RS-422</a><span style="font-weight: bold;">&nbsp;·</span> <a href="http://en.wikipedia.org/wiki/IEEE_1284" title="IEEE 1284">IEEE-1284 (parallel port)</a><span style="font-weight: bold;">&nbsp;·</span> <a href="http://en.wikipedia.org/wiki/1-Wire" title="1-Wire">1-Wire</a><span style="font-weight: bold;">&nbsp;·</span> <a href="http://en.wikipedia.org/wiki/I%C2%B2C" title="I²C">I²C</a><span style="font-weight: bold;">&nbsp;·</span> <a href="http://en.wikipedia.org/wiki/Serial_Peripheral_Interface_Bus" title="Serial Peripheral Interface Bus">SPI</a><span style="font-weight: bold;">&nbsp;·</span> <a href="http://en.wikipedia.org/wiki/EIA-485" title="EIA-485">EIA/RS-485</a><span style="font-weight: bold;">&nbsp;·</span> <a href="http://en.wikipedia.org/wiki/Parallel_SCSI" title="Parallel SCSI">Parallel SCSI</a><span style="font-weight: bold;">&nbsp;·</span> <a href="http://en.wikipedia.org/wiki/Universal_Serial_Bus" title="Universal Serial Bus">USB</a><span style="font-weight: bold;">&nbsp;·</span> <a href="http://en.wikipedia.org/wiki/IEEE_1394_interface" title="IEEE 1394 interface">FireWire (1394)</a><span style="font-weight: bold;">&nbsp;·</span> <a href="http://en.wikipedia.org/wiki/Fibre_Channel" title="Fibre Channel">Fibre Channel</a><span style="font-weight: bold;">&nbsp;·</span> <a href="http://en.wikipedia.org/wiki/Camera_Link" title="Camera Link">Camera Link</a><span style="font-weight: bold;">&nbsp;·</span> <a href="http://en.wikipedia.org/wiki/PCI_Express#PCI_Express_External_Cabling" title="PCI Express">External PCI Express x16</a><span style="font-weight: bold;">&nbsp;·</span> <a href="http://en.wikipedia.org/wiki/Light_Peak" title="Light Peak">Light Peak</a></div>
+</td>
+</tr>
+<tr style="height: 2px;">
+<td></td>
+</tr>
+<tr>
+<td class="navbox-group" style=""><a href="http://en.wikipedia.org/wiki/Vehicle_bus" title="Vehicle bus">Vehicle buses</a></td>
+<td style="padding: 0px; text-align: left; border-left-width: 2px; border-left-style: solid; width: 100%;" class="navbox-list navbox-even">
+<div style="padding: 0em 0.25em;"><a href="http://en.wikipedia.org/wiki/Local_Interconnect_Network" title="Local Interconnect Network">LIN</a><span style="font-weight: bold;">&nbsp;·</span> <a href="http://en.wikipedia.org/wiki/J1708" title="J1708">J1708</a><span style="font-weight: bold;">&nbsp;·</span> <a href="http://en.wikipedia.org/wiki/J1587" title="J1587">J1587</a><span style="font-weight: bold;">&nbsp;·</span> <a href="http://en.wikipedia.org/wiki/Fleet_Management_System" title="Fleet Management System">FMS</a><span style="font-weight: bold;">&nbsp;·</span> <a href="http://en.wikipedia.org/wiki/J1939" title="J1939">J1939</a><span style="font-weight: bold;">&nbsp;·</span> <a href="http://en.wikipedia.org/wiki/Controller%E2%80%93area_network" title="Controller–area network">CAN</a><span style="font-weight: bold;">&nbsp;·</span> <a href="http://en.wikipedia.org/wiki/Vehicle_Area_Network" title="Vehicle Area Network">VAN</a><span style="font-weight: bold;">&nbsp;·</span> <a href="http://en.wikipedia.org/wiki/FlexRay" title="FlexRay">FlexRay</a><span style="font-weight: bold;">&nbsp;·</span> <a href="http://en.wikipedia.org/wiki/Media_Oriented_Systems_Transport" title="Media Oriented Systems Transport">MOST</a></div>
+</td>
+</tr>
+<tr style="height: 2px;">
+<td></td>
+</tr>
+<tr>
+<td class="navbox-abovebelow" style="" colspan="2"><small><i>Note: interfaces are listed in speed ascending order (roughly), the interface at the end of each section should be the fastest</i></small></td>
+</tr>
+</tbody></table>
+</td>
+</tr>
+</tbody></table>
+
+
+<!-- 
+NewPP limit report
+Preprocessor node count: 1560/1000000
+Post-expand include size: 38929/2048000 bytes
+Template argument size: 21768/2048000 bytes
+Expensive parser function count: 0/500
+-->
+
+<!-- Saved in parser cache with key enwiki:pcache:idhash:75008-0!1!0!default!!en!2 and timestamp 20091020040634 -->
+<div class="printfooter">
+Retrieved from "<a href="http://en.wikipedia.org/wiki/Universal_asynchronous_receiver/transmitter">http://en.wikipedia.org/wiki/Universal_asynchronous_receiver/transmitter</a>"</div>
+			<div id="catlinks" class="catlinks"><div id="mw-normal-catlinks"><a href="http://en.wikipedia.org/wiki/Special:Categories" title="Special:Categories">Categories</a>: <span dir="ltr"><a href="http://en.wikipedia.org/wiki/Category:Data_transmission" title="Category:Data transmission">Data transmission</a></span></div></div>			<!-- end content -->
+						<div class="visualClear"></div>
+		</div>
+	</div>
+		</div>
+		<div id="column-one">
+	<div id="p-cactions" class="portlet">
+		<h5>Views</h5>
+		<div class="pBody">
+			<ul xml:lang="en" lang="en">
+	
+				 <li id="ca-nstab-main" class="selected"><a href="http://en.wikipedia.org/wiki/Universal_asynchronous_receiver/transmitter" title="View the content page [alt-shift-c]" accesskey="c">Article</a></li>
+				 <li id="ca-talk"><a href="http://en.wikipedia.org/wiki/Talk:Universal_asynchronous_receiver/transmitter" title="Discussion about the content page [alt-shift-t]" accesskey="t">Discussion</a></li>
+				 <li id="ca-edit"><a href="http://en.wikipedia.org/w/index.php?title=Universal_asynchronous_receiver/transmitter&amp;action=edit" title="You can edit this page. 
+Please use the preview button before saving. [alt-shift-e]" accesskey="e">Edit this page</a></li>
+				 <li id="ca-history"><a href="http://en.wikipedia.org/w/index.php?title=Universal_asynchronous_receiver/transmitter&amp;action=history" title="Past versions of this page [alt-shift-h]" accesskey="h">History</a></li>			</ul>
+		</div>
+	</div>
+	<div class="portlet" id="p-personal">
+		<h5>Personal tools</h5>
+		<div class="pBody">
+			<ul xml:lang="en" lang="en">
+				<li id="pt-optin-try"><a href="http://en.wikipedia.org/w/index.php?title=Special:UsabilityInitiativeOptIn&amp;from=Universal_asynchronous_receiver%2Ftransmitter" title="Try out new features" class="no-text-transform">Try Beta</a></li>
+				<li id="pt-login"><a href="http://en.wikipedia.org/w/index.php?title=Special:UserLogin&amp;returnto=Universal_asynchronous_receiver/transmitter" title="You are encouraged to log in; however, it is not mandatory. [alt-shift-o]" accesskey="o">Log in / create account</a></li>
+			</ul>
+		</div>
+	</div>
+	<div class="portlet" id="p-logo">
+		<a style="background-image: url(http://upload.wikimedia.org/wikipedia/en/b/bc/Wiki.png);" href="http://en.wikipedia.org/wiki/Main_Page" title="Visit the main page"></a>
+	</div>
+	<script type="text/javascript"> if (window.isMSIE55) fixalpha(); </script>
+	<div class="generated-sidebar portlet" id="p-navigation">
+		<h5 xml:lang="en" lang="en">Navigation</h5>
+		<div class="pBody">
+			<ul>
+				<li id="n-mainpage-description"><a href="http://en.wikipedia.org/wiki/Main_Page" title="Visit the main page [alt-shift-z]" accesskey="z">Main page</a></li>
+				<li id="n-contents"><a href="http://en.wikipedia.org/wiki/Portal:Contents" title="Guides to browsing Wikipedia">Contents</a></li>
+				<li id="n-featuredcontent"><a href="http://en.wikipedia.org/wiki/Portal:Featured_content" title="Featured content — the best of Wikipedia">Featured content</a></li>
+				<li id="n-currentevents"><a href="http://en.wikipedia.org/wiki/Portal:Current_events" title="Find background information on current events">Current events</a></li>
+				<li id="n-randompage"><a href="http://en.wikipedia.org/wiki/Special:Random" title="Load a random article [alt-shift-x]" accesskey="x">Random article</a></li>
+			</ul>
+		</div>
+	</div>
+	<div id="p-search" class="portlet">
+		<h5 xml:lang="en" lang="en"><label for="searchInput">Search</label></h5>
+		<div id="searchBody" class="pBody">
+			<form action="/w/index.php" id="searchform">
+				<input name="title" value="Special:Search" type="hidden">
+				<input autocomplete="off" id="searchInput" title="Search Wikipedia" accesskey="f" value="" name="search">
+				<input name="go" class="searchButton" id="searchGoButton" value="Go" title="Go to a page with this exact name if one exists" type="submit">&nbsp;
+				<input name="fulltext" class="searchButton" id="mw-searchButton" value="Search" title="Search Wikipedia for this text" type="submit">
+			</form>
+		</div>
+	</div>
+	<div class="generated-sidebar portlet" id="p-interaction">
+		<h5 xml:lang="en" lang="en">Interaction</h5>
+		<div class="pBody">
+			<ul>
+				<li id="n-aboutsite"><a href="http://en.wikipedia.org/wiki/Wikipedia:About" title="Find out about Wikipedia">About Wikipedia</a></li>
+				<li id="n-portal"><a href="http://en.wikipedia.org/wiki/Wikipedia:Community_portal" title="About the project, what you can do, where to find things">Community portal</a></li>
+				<li id="n-recentchanges"><a href="http://en.wikipedia.org/wiki/Special:RecentChanges" title="The list of recent changes in the wiki [alt-shift-r]" accesskey="r">Recent changes</a></li>
+				<li id="n-contact"><a href="http://en.wikipedia.org/wiki/Wikipedia:Contact_us" title="How to contact Wikipedia">Contact Wikipedia</a></li>
+				<li id="n-sitesupport"><a href="http://wikimediafoundation.org/wiki/Donate/Now/en?utm_source=donate&amp;utm_medium=sidebar&amp;utm_campaign=spontaneous_donation" title="Support us">Donate to Wikipedia</a></li>
+				<li id="n-help"><a href="http://en.wikipedia.org/wiki/Help:Contents" title="Guidance on how to use and edit Wikipedia">Help</a></li>
+			</ul>
+		</div>
+	</div>
+	<div class="portlet" id="p-tb">
+		<h5 xml:lang="en" lang="en">Toolbox</h5>
+		<div class="pBody">
+			<ul>
+				<li id="t-whatlinkshere"><a href="http://en.wikipedia.org/wiki/Special:WhatLinksHere/Universal_asynchronous_receiver/transmitter" title="List of all English Wikipedia pages containing links to this page [alt-shift-j]" accesskey="j">What links here</a></li>
+				<li id="t-recentchangeslinked"><a href="http://en.wikipedia.org/wiki/Special:RecentChangesLinked/Universal_asynchronous_receiver/transmitter" title="Recent changes in pages linked from this page [alt-shift-k]" accesskey="k">Related changes</a></li>
+<li id="t-upload"><a href="http://en.wikipedia.org/wiki/Wikipedia:Upload" title="Upload files [alt-shift-u]" accesskey="u">Upload file</a></li>
+<li id="t-specialpages"><a href="http://en.wikipedia.org/wiki/Special:SpecialPages" title="List of all special pages [alt-shift-q]" accesskey="q">Special pages</a></li>
+				<li id="t-print"><a href="http://en.wikipedia.org/w/index.php?title=Universal_asynchronous_receiver/transmitter&amp;printable=yes" rel="alternate" title="Printable version of this page [alt-shift-p]" accesskey="p">Printable version</a></li>				<li id="t-permalink"><a href="http://en.wikipedia.org/w/index.php?title=Universal_asynchronous_receiver/transmitter&amp;oldid=317035394" title="Permanent link to this revision of the page">Permanent link</a></li><li id="t-cite"><a href="http://en.wikipedia.org/w/index.php?title=Special:Cite&amp;page=Universal_asynchronous_receiver/transmitter&amp;id=317035394" title="Information on how to cite this page">Cite this page</a></li>			</ul>
+		</div>
+	</div>
+	<div id="p-lang" class="portlet">
+		<h5 xml:lang="en" lang="en">Languages</h5>
+		<div class="pBody">
+			<ul>
+				<li class="interwiki-cs"><a href="http://cs.wikipedia.org/wiki/USART">Česky</a></li>
+				<li class="interwiki-da"><a href="http://da.wikipedia.org/wiki/UART">Dansk</a></li>
+				<li class="interwiki-de"><a href="http://de.wikipedia.org/wiki/UART">Deutsch</a></li>
+				<li class="interwiki-es"><a href="http://es.wikipedia.org/wiki/UART">Español</a></li>
+				<li class="interwiki-fr"><a href="http://fr.wikipedia.org/wiki/UART">Français</a></li>
+				<li class="interwiki-id"><a href="http://id.wikipedia.org/wiki/UART">Bahasa Indonesia</a></li>
+				<li class="interwiki-it"><a href="http://it.wikipedia.org/wiki/UART">Italiano</a></li>
+				<li class="interwiki-he"><a href="http://he.wikipedia.org/wiki/UART">עברית</a></li>
+				<li class="interwiki-lt"><a href="http://lt.wikipedia.org/wiki/UART">Lietuvių</a></li>
+				<li class="interwiki-ja"><a href="http://ja.wikipedia.org/wiki/UART">日本語</a></li>
+				<li class="interwiki-pl"><a href="http://pl.wikipedia.org/wiki/Universal_Asynchronous_Receiver_and_Transmitter">Polski</a></li>
+				<li class="interwiki-pt"><a href="http://pt.wikipedia.org/wiki/UART">Português</a></li>
+				<li class="interwiki-su"><a href="http://su.wikipedia.org/wiki/UART">Basa Sunda</a></li>
+				<li class="interwiki-fi"><a href="http://fi.wikipedia.org/wiki/UART">Suomi</a></li>
+				<li class="interwiki-uk"><a href="http://uk.wikipedia.org/wiki/UART">Українська</a></li>
+				<li class="interwiki-zh"><a href="http://zh.wikipedia.org/wiki/UART">中文</a></li>
+			</ul>
+		</div>
+	</div>
+		</div><!-- end of the left (by default at least) column -->
+			<div class="visualClear"></div>
+			<div id="footer">
+				<div id="f-poweredbyico"><a href="http://www.mediawiki.org/"><img src="transmitter_files/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" width="88" height="31"></a></div>
+				<div id="f-copyrightico"><a href="http://wikimediafoundation.org/"><img src="transmitter_files/wikimedia-button.png" alt="Wikimedia Foundation" width="88" height="31"></a></div>
+			<ul id="f-list">
+					<li id="lastmod"> This page was last modified on 30 September 2009 at 05:31.</li>
+					<li id="copyright">Text is available under the <a rel="license" href="http://en.wikipedia.org/wiki/Wikipedia:Text_of_Creative_Commons_Attribution-ShareAlike_3.0_Unported_License">Creative Commons Attribution-ShareAlike License</a><a rel="license" href="http://creativecommons.org/licenses/by-sa/3.0/" style="display: none;"></a>;
+additional terms may apply.
+See <a href="http://wikimediafoundation.org/wiki/Terms_of_Use">Terms of Use</a> for details.<br>
+Wikipedia® is a registered trademark of the <a href="http://www.wikimediafoundation.org/">Wikimedia Foundation, Inc.</a>, a non-profit organization.</li>
+					<li id="privacy"><a href="http://wikimediafoundation.org/wiki/Privacy_policy" title="wikimedia:Privacy policy">Privacy policy</a></li>
+					<li id="about"><a href="http://en.wikipedia.org/wiki/Wikipedia:About" title="Wikipedia:About">About Wikipedia</a></li>
+					<li id="disclaimer"><a href="http://en.wikipedia.org/wiki/Wikipedia:General_disclaimer" title="Wikipedia:General disclaimer">Disclaimers</a></li>
+			</ul>
+		</div>
+</div>
+
+<script type="text/javascript">if (window.runOnloadHook) runOnloadHook();</script>
+<!-- Served by srv141 in 0.067 secs. --></body></html>
