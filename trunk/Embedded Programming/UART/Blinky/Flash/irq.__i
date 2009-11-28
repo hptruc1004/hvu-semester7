@@ -1,0 +1,1 @@
+-c --device DARMP -D__MICROLIB -g -O0 --apcs=interwork -I "C:\Keil\ARM\INC\Philips" -o ".\Flash\irq.o" --omf_browse ".\Flash\irq.crf" --depend ".\Flash\irq.d" "IRQ.c"
