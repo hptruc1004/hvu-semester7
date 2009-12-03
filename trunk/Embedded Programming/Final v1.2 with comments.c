@@ -81,27 +81,27 @@ void printCommand(void);
 void nl(void);
 
 //------------------------------------------------------
-void parseCommand(char* cmd, char* op, char* params);
-void getCommand(void);
-void getCommand2(void);
+void parseCommand(char* cmd, char* op, char* params);		// parse LED, TIME sub command to operator and parameters
+void getCommand(void);										// get main command: LED, TIME, CALC, PIANO
+void getCommand2(void);										// get sub command: ON 2, OFF 2, ON ALL, SET ..., SHOW,
 
-void ptrLEDFunction(int n, void (*f)(int n));
-void parseLED(char* cmd);
+void ptrLEDFunction(int n, void (*f)(int n));				// LED pointer function, f is the function
+void parseLED(char* cmd);									// parse and do LED command
 
-int add(int n1, int n2);
-int sub(int n1, int n2);
-int mul(int n1, int n2);
-int div(int n1, int n2);
-int mod(int n1, int n2);
-int ptrCalcFunction(int n1, int n2, int (*calc)(int n1, int n2));
+int add(int n1, int n2);									// n1 + n2
+int sub(int n1, int n2);									// n1 - n2
+int mul(int n1, int n2);									// n1 * n2
+int div(int n1, int n2);									// n1 / n2
+int mod(int n1, int n2);									// n1 % n2
+int ptrCalcFunction(int n1, int n2, int (*calc)(int n1, int n2));		// CALC pointer function, f is the function: add, sub, ...
 
-void parseTIME(char *cmd);
-void parseCALC(char *cmd);
-void parseCALCCommand(char *cmd, char *op, int *n1, int* n2);
+void parseTIME(char *cmd);									// parse and do TIME command
+void parseCALC(char *cmd);									// parse and do CALC command
+void parseCALCCommand(char *cmd, char *op, int *n1, int* n2);			// parse CALC sub command to operator and parameters n1, n2
 
-DateTime setDateTimeByString(char *params);
-DateTime setDateTime(int day, int mon, int year, int hour, int min, int sec);
-int atoi(char n);
+DateTime setDateTimeByString(char *params);					// parse string to parameter, return DateTime struct
+DateTime setDateTime(int day, int mon, int year, int hour, int min, int sec);	// create a DateTime object and return
+int atoi(char n);											// convert a char to integer
 //------------------------------------------------------
 
 void ptrLEDFunction(int n, void (*f)(int n)) {
@@ -179,20 +179,23 @@ __irq void UART1_Handler() {
 	ch = getkey();
 	
 	if (ch == 13) {
+		// dat '\0' vao cuoi chuoi command
 		__cmd[__ind][__len++] = '\0';
 		// dang trong tinh trang chua co command
 		if (mode == NA_CMD) {
 			nl();
-			getCommand();		// parse ra command va luu trong mode
+			getCommand();		// parse ra main command va luu trong mode
 		}
 		else {
 			nl();
-			getCommand2();
+			getCommand2();		// parse ra sub command
 		}
+		// new __ind > 10, roll ve 0
 		__ind++;
 		if (__ind == 11) {
-			__ind = 10;
+			__ind = 0;
 		}
+		// set __len ve 0, va sang command moi
 		__len = 0;
 	}
 	else if (mode == NA_CMD && ch == 27) {
@@ -201,7 +204,7 @@ __irq void UART1_Handler() {
 	else if (mode != NA_CMD && ch == 27) {
 		mode = NA_CMD;		// reset lai mode
 		nl();
-		sendchar('>');		// in dau ngat	 		
+		sendchar('>');		// in dau ngat
 	}
 	else {
 		sendchar(ch);	// send char vua type ra terminal
